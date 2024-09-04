@@ -12,4 +12,8 @@ export class insertNoteDTO {
   @IsString()
   @IsNotEmpty()
   url: string;
+
+  @IsString()
+  @IsOptional()
+  file: string;
 }

@@ -50,7 +50,6 @@ export class NoteService {
         }
     }
     
-
     async updateNote(noteId: number, updateNoteDTO: updateNoteDTO) {
         try {
             const note = await this.prismaService.note.findUnique({where: {id: noteId}})
